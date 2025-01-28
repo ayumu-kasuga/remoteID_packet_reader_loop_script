@@ -1,0 +1,22 @@
+drone_array,,
+Serial Number,11111,22222,33333
+FAA Assigned Number,ID_ONE,ID_TWO,ID_THREE
+UA type,Helicopter (or Multirotor) (2),Helicopter (or Multirotor) (2),Helicopter (or Multirotor) (2)
+Operator ID,Team 1,Team 2,Team 3
+Affiliation,EMS,PD,Forest Service
+Operational Status,On Ground (1),On Ground (1),On Ground (1)
+Speed Multiplier,0.25 (0),0.25 (0),0.25 (0)
+Direction,181,181,181
+Speed,0,0,0
+Vert Speed,0,0,0
+Latitude,15,69,70
+Longitude,-15,-63,-70
+Pressure Altitude,3113,3113,3113
+Geodetic Altitude,3277,3277,3277
+Height AGL,1991,1991,1991
+Horizontal Accuracy,30 m (9),30 m (9),30 m (9)
+Vertical Accuracy,45 m (2),45 m (2),45 m (2)
+Baro Accuracy,45 m (2),45 m (2),45 m (2)
+Speed Accuracy,1 m/s (3),1 m/s (3),1 m/s (3)
+Time,0.05574,0.046042,0.63397
+Drone Name,Thermal,DJI-Film,search non-thermal
