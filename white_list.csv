@@ -1,6 +1,6 @@
-Affiliation,EMS,PD,Forest Service
-Serial Number,11111,22222,33333
-Drone Name,Thermal,DJI-Film,search non-thermal
-FAA Assigned Number,ID_ONE,ID_TWO,
-UA type,Helicopter (or Multirotor) (2),Helicopter (or Multirotor) (2),
-Operator ID,Team 1,Team 2,
+Affiliation,EMS,PD,Forest Service,Team 10 Capstone
+Serial Number,11111,22222,33333,18696011833
+Drone Name,Thermal,DJI-Film,search non-thermal,remoteID test Module
+FAA Assigned Number,ID_ONE,ID_TWO,,
+UA type,Helicopter (or Multirotor) (2),Helicopter (or Multirotor) (2),,
+Operator ID,Team 1,Team 2,,
