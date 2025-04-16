@@ -1,0 +1,1346 @@
+
+
+GROUNDED PACKET 1 (SERIAL 2)
+   14   1.201449 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 14: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    UTC Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    Epoch Arrival Time: 1738974825.371410000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.002966000 seconds]
+    [Time delta from previous displayed frame: 0.002966000 seconds]
+    [Time since reference or first frame: 1.201449948 seconds]
+    Frame Number: 14
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 22801
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 22801
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x21
+        .... ...1 = CRC: Ok
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 15
+    RSSI: -59 dBm
+    Event counter: 0
+    Timestamp: 2290265028µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 1798µs]
+    [Delta time (start to start): 2966µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x892e
+            .... 1001 0010 1110 = Advertiser Data Identifier: 0x92e
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0d01f219040222464133434637374839330000000000000000000000000052005465616d20313000000000000000000000000000000000122002010092592e15fb4cd0ce890ce10cd10729231a4f0a00420061592e15e24cd0ce0100000000000000e00ce9f87b0b00000
+    CRC: 0x2a5b28
+Open Drone ID
+    Message Counter: 1 (0x01)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 4
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+	    0001 .... = ID Type: Serial Number (ANSI/CTA-2063-A) (1)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: 2222222
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 2
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = Operational Status: Airborne (2)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..0. = East/West Direction Segment: East (<180) (0)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 2
+            Speed: 1
+            Vert Speed: 0
+            UA Latitude: 355359122
+            UA Longitude: -825209605
+            UA Pressure Altitude: 3209
+            UA Geodetic Altitude: 3297
+            UA Height AGL: 2001
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 20250 (lag: 0.3s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+        Open Drone ID - System Message (4)
+            0100 .... = Message Type: System (4)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            .... 00.. = Classification Type: Undeclared (0)
+            .... ..00 = Operator Location Type: Take Off (0)
+            Operator Latitude: 355359073
+            Operator Longitude: -825209630
+            Area Count: 1
+            Area Radius: 0
+            Area Ceiling: 0
+            Area Floor: 0
+            UA Classification: 0x00
+            Operator Geodetic Alt: 3296
+            Message Timestamp: 192674025 (lag: 1546300800s)
+            Reserved: 00
+
+CORRUPTED (FAA 1)----------------------------------------------------------------------------------------------
+   36   4.008504 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 36: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb 11, 2025 02:54:53.248523000 UTC
+    UTC Arrival Time: Feb 11, 2025 02:54:53.248523000 UTC
+    Epoch Arrival Time: 1739242493.248523000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.001658000 seconds]
+    [Time delta from previous displayed frame: 0.001658000 seconds]
+    [Time since reference or first frame: 4.008504000 seconds]
+    Frame Number: 36
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 42398
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 42398
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x20
+        .... ...0 = CRC: Error
+            [Expert Info (Error/Checksum): CRC is bad]
+                [CRC is bad]
+                [Severity level: Error]
+                [Group: Checksum]
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 2
+    RSSI: -67 dBm
+    Event counter: 0
+    Timestamp: 2089838978µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 490µs]
+    [Delta time (start to start): 1658µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x8204
+            .... 0010 0000 0100 = Advertiser Data Identifier: 0x204
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0dbff21903022246413343463737c839330000000000000000000000000052005465616d203130000000000000000000000000000000001212b50000175a2e15704fd0ce3c0cdb0cd6072923a2800a0042001d5b2e15dd4ad0ce0100000000000000ea0c7e0c800b00000
+    CRC: 0xa42ecf
+        [Expert Info (Warning/Checksum): Incorrect CRC]
+            [Incorrect CRC]
+            [Severity level: Warning]
+            [Group: Checksum]
+Open Drone ID
+    Message Counter: 191 (0xbf)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 3
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = ID Type: CAA Assigned Registration ID  (2)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: FA3CF77 93
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 10
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0001 .... = Operational Status: On Ground (1)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..1. = East/West Direction Segment: West (>=180) (1)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 181
+            Speed: 0
+            Vert Speed: 0
+            UA Latitude: 355359255
+            UA Longitude: -825208976
+            UA Pressure Altitude: 3132
+            UA Geodetic Altitude: 3291
+            UA Height AGL: 2006
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 32930 (lag: 0.2s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+
+GROUNDED PACKET 2 (FAA 2)
+   14   1.201449 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 14: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    UTC Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    Epoch Arrival Time: 1738974825.371410000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.002966000 seconds]
+    [Time delta from previous displayed frame: 0.002966000 seconds]
+    [Time since reference or first frame: 1.201449948 seconds]
+    Frame Number: 14
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 22801
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 22801
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x21
+        .... ...1 = CRC: Ok
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 15
+    RSSI: -59 dBm
+    Event counter: 0
+    Timestamp: 2290265028µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 1798µs]
+    [Delta time (start to start): 2966µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x892e
+            .... 1001 0010 1110 = Advertiser Data Identifier: 0x92e
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0d01f219040222464133434637374839330000000000000000000000000052005465616d20313000000000000000000000000000000000122002010092592e15fb4cd0ce890ce10cd10729231a4f0a00420061592e15e24cd0ce0100000000000000e00ce9f87b0b00000
+    CRC: 0x2a5b28
+Open Drone ID
+    Message Counter: 1 (0x01)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 4
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = ID Type: CAA Assigned Registration ID  (2)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: FA22222
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 2
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = Operational Status: Airborne (2)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..0. = East/West Direction Segment: East (<180) (0)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 2
+            Speed: 1
+            Vert Speed: 0
+            UA Latitude: 355359122
+            UA Longitude: -825209605
+            UA Pressure Altitude: 3209
+            UA Geodetic Altitude: 3297
+            UA Height AGL: 2001
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 20250 (lag: 0.3s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+        Open Drone ID - System Message (4)
+            0100 .... = Message Type: System (4)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            .... 00.. = Classification Type: Undeclared (0)
+            .... ..00 = Operator Location Type: Take Off (0)
+            Operator Latitude: 355359073
+            Operator Longitude: -825209630
+            Area Count: 1
+            Area Radius: 0
+            Area Ceiling: 0
+            Area Floor: 0
+            UA Classification: 0x00
+            Operator Geodetic Alt: 3296
+            Message Timestamp: 192674025 (lag: 1546300800s)
+            Reserved: 00
+
+GROUNDED PACKET 3 (FAA 3)
+   14   1.201449 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 14: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    UTC Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    Epoch Arrival Time: 1738974825.371410000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.002966000 seconds]
+    [Time delta from previous displayed frame: 0.002966000 seconds]
+    [Time since reference or first frame: 1.201449948 seconds]
+    Frame Number: 14
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 22801
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 22801
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x21
+        .... ...1 = CRC: Ok
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 15
+    RSSI: -59 dBm
+    Event counter: 0
+    Timestamp: 2290265028µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 1798µs]
+    [Delta time (start to start): 2966µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x892e
+            .... 1001 0010 1110 = Advertiser Data Identifier: 0x92e
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0d01f219040222464133434637374839330000000000000000000000000052005465616d20313000000000000000000000000000000000122002010092592e15fb4cd0ce890ce10cd10729231a4f0a00420061592e15e24cd0ce0100000000000000e00ce9f87b0b00000
+    CRC: 0x2a5b28
+Open Drone ID
+    Message Counter: 1 (0x01)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 4
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = ID Type: CAA Assigned Registration ID  (2)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: FA33333
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 3
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = Operational Status: Airborne (2)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..0. = East/West Direction Segment: East (<180) (0)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 2
+            Speed: 1
+            Vert Speed: 0
+            UA Latitude: 355359122
+            UA Longitude: -825209605
+            UA Pressure Altitude: 3209
+            UA Geodetic Altitude: 3297
+            UA Height AGL: 2001
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 20250 (lag: 0.3s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+        Open Drone ID - System Message (4)
+            0100 .... = Message Type: System (4)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            .... 00.. = Classification Type: Undeclared (0)
+            .... ..00 = Operator Location Type: Take Off (0)
+            Operator Latitude: 355359073
+            Operator Longitude: -825209630
+            Area Count: 1
+            Area Radius: 0
+            Area Ceiling: 0
+            Area Floor: 0
+            UA Classification: 0x00
+            Operator Geodetic Alt: 3296
+            Message Timestamp: 192674025 (lag: 1546300800s)
+            Reserved: 00
+
+GROUNDED PACKET 4 (SERIAL 3)
+   14   1.201449 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 14: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    UTC Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    Epoch Arrival Time: 1738974825.371410000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.002966000 seconds]
+    [Time delta from previous displayed frame: 0.002966000 seconds]
+    [Time since reference or first frame: 1.201449948 seconds]
+    Frame Number: 14
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 22801
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 22801
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x21
+        .... ...1 = CRC: Ok
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 15
+    RSSI: -59 dBm
+    Event counter: 0
+    Timestamp: 2290265028µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 1798µs]
+    [Delta time (start to start): 2966µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x892e
+            .... 1001 0010 1110 = Advertiser Data Identifier: 0x92e
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0d01f219040222464133434637374839330000000000000000000000000052005465616d20313000000000000000000000000000000000122002010092592e15fb4cd0ce890ce10cd10729231a4f0a00420061592e15e24cd0ce0100000000000000e00ce9f87b0b00000
+    CRC: 0x2a5b28
+Open Drone ID
+    Message Counter: 1 (0x01)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 4
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0001 .... = ID Type: Serial Number (ANSI/CTA-2063-A) (1)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: 3333333
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 3
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = Operational Status: Airborne (2)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..0. = East/West Direction Segment: East (<180) (0)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 2
+            Speed: 1
+            Vert Speed: 0
+            UA Latitude: 355359122
+            UA Longitude: -825209605
+            UA Pressure Altitude: 3209
+            UA Geodetic Altitude: 3297
+            UA Height AGL: 2001
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 20250 (lag: 0.3s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+        Open Drone ID - System Message (4)
+            0100 .... = Message Type: System (4)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            .... 00.. = Classification Type: Undeclared (0)
+            .... ..00 = Operator Location Type: Take Off (0)
+            Operator Latitude: 355359073
+            Operator Longitude: -825209630
+            Area Count: 1
+            Area Radius: 0
+            Area Ceiling: 0
+            Area Floor: 0
+            UA Classification: 0x00
+            Operator Geodetic Alt: 3296
+            Message Timestamp: 192674025 (lag: 1546300800s)
+            Reserved: 00
+
+
+GROUNDED PACKET 5 (FAA 3)
+   14   1.201449 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 14: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    UTC Arrival Time: Feb  8, 2025 00:33:45.371410000 UTC
+    Epoch Arrival Time: 1738974825.371410000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.002966000 seconds]
+    [Time delta from previous displayed frame: 0.002966000 seconds]
+    [Time since reference or first frame: 1.201449948 seconds]
+    Frame Number: 14
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 22801
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 22801
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x21
+        .... ...1 = CRC: Ok
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 15
+    RSSI: -59 dBm
+    Event counter: 0
+    Timestamp: 2290265028µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 1798µs]
+    [Delta time (start to start): 2966µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x892e
+            .... 1001 0010 1110 = Advertiser Data Identifier: 0x92e
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0d01f219040222464133434637374839330000000000000000000000000052005465616d20313000000000000000000000000000000000122002010092592e15fb4cd0ce890ce10cd10729231a4f0a00420061592e15e24cd0ce0100000000000000e00ce9f87b0b00000
+    CRC: 0x2a5b28
+Open Drone ID
+    Message Counter: 1 (0x01)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 4
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = ID Type: CAA Assigned Registration ID  (2)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: FA33333
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 3
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = Operational Status: Airborne (2)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..0. = East/West Direction Segment: East (<180) (0)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 2
+            Speed: 1
+            Vert Speed: 0
+            UA Latitude: 355359122
+            UA Longitude: -825209605
+            UA Pressure Altitude: 3209
+            UA Geodetic Altitude: 3297
+            UA Height AGL: 2001
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 20250 (lag: 0.3s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+        Open Drone ID - System Message (4)
+            0100 .... = Message Type: System (4)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            .... 00.. = Classification Type: Undeclared (0)
+            .... ..00 = Operator Location Type: Take Off (0)
+            Operator Latitude: 355359073
+            Operator Longitude: -825209630
+            Area Count: 1
+            Area Radius: 0
+            Area Ceiling: 0
+            Area Floor: 0
+            UA Classification: 0x00
+            Operator Geodetic Alt: 3296
+            Message Timestamp: 192674025 (lag: 1546300800s)
+            Reserved: 00
+
+
+AIRBORNE PACKET 1 (FAA 1)-----------------------------------------------------------------------------------
+   17   1.701544 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 17: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb  8, 2025 00:33:45.871505000 UTC
+    UTC Arrival Time: Feb  8, 2025 00:33:45.871505000 UTC
+    Epoch Arrival Time: 1738974825.871505000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.001658000 seconds]
+    [Time delta from previous displayed frame: 0.001658000 seconds]
+    [Time since reference or first frame: 1.701544948 seconds]
+    Frame Number: 17
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 22806
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 22806
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x21
+        .... ...1 = CRC: Ok
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 14
+    RSSI: -63 dBm
+    Event counter: 0
+    Timestamp: 2290765123µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 490µs]
+    [Delta time (start to start): 1658µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x876d
+            .... 0111 0110 1101 = Advertiser Data Identifier: 0x76d
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0d02f219040212313836393630313138333300000000000000000000000052005465616d20313000000000000000000000000000000000122002010092592e15fb4cd0ce880ce10cd00729231a4f0a00420061592e15e24cd0ce0100000000000000e00ce9f87b0b00000
+    CRC: 0xf1413e
+Open Drone ID
+    Message Counter: 2 (0x02)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 4
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = ID Type: CAA Assigned Registration ID  (2)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: 18696011833
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 10
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = Operational Status: Airborne (2)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..0. = East/West Direction Segment: East (<180) (0)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 2
+            Speed: 1
+            Vert Speed: 0
+            UA Latitude: 355359122
+            UA Longitude: -825209605
+            UA Pressure Altitude: 3208
+            UA Geodetic Altitude: 3297
+            UA Height AGL: 2000
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 20250 (lag: 0.8s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+        Open Drone ID - System Message (4)
+            0100 .... = Message Type: System (4)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            .... 00.. = Classification Type: Undeclared (0)
+            .... ..00 = Operator Location Type: Take Off (0)
+            Operator Latitude: 355359073
+            Operator Longitude: -825209630
+            Area Count: 1
+            Area Radius: 0
+            Area Ceiling: 0
+            Area Floor: 0
+            UA Classification: 0x00
+            Operator Geodetic Alt: 3296
+            Message Timestamp: 192674025 (lag: 1546300800s)
+            Reserved: 00
+
+
+
+
+AIRBORNE PACKET 2 (SERIAL 1)---------------------------------------------------------------------------------------
+   17   1.701544 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 17: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb  8, 2025 00:33:45.871505000 UTC
+    UTC Arrival Time: Feb  8, 2025 00:33:45.871505000 UTC
+    Epoch Arrival Time: 1738974825.871505000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.001658000 seconds]
+    [Time delta from previous displayed frame: 0.001658000 seconds]
+    [Time since reference or first frame: 1.701544948 seconds]
+    Frame Number: 17
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 22806
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 22806
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x21
+        .... ...1 = CRC: Ok
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 14
+    RSSI: -63 dBm
+    Event counter: 0
+    Timestamp: 2290765123µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 490µs]
+    [Delta time (start to start): 1658µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x876d
+            .... 0111 0110 1101 = Advertiser Data Identifier: 0x76d
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0d02f219040212313836393630313138333300000000000000000000000052005465616d20313000000000000000000000000000000000122002010092592e15fb4cd0ce880ce10cd00729231a4f0a00420061592e15e24cd0ce0100000000000000e00ce9f87b0b00000
+    CRC: 0xf1413e
+Open Drone ID
+    Message Counter: 2 (0x02)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 4
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0001 .... = ID Type: Serial Number (ANSI/CTA-2063-A) (1)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: 18696011833
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 10
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = Operational Status: Airborne (2)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..0. = East/West Direction Segment: East (<180) (0)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 2
+            Speed: 1
+            Vert Speed: 0
+            UA Latitude: 355359122
+            UA Longitude: -825209605
+            UA Pressure Altitude: 3208
+            UA Geodetic Altitude: 3297
+            UA Height AGL: 2000
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 20250 (lag: 0.8s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+        Open Drone ID - System Message (4)
+            0100 .... = Message Type: System (4)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            .... 00.. = Classification Type: Undeclared (0)
+            .... ..00 = Operator Location Type: Take Off (0)
+            Operator Latitude: 355359073
+            Operator Longitude: -825209630
+            Area Count: 1
+            Area Radius: 0
+            Area Ceiling: 0
+            Area Floor: 0
+            UA Classification: 0x00
+            Operator Geodetic Alt: 3296
+            Message Timestamp: 192674025 (lag: 1546300800s)
+            Reserved: 00
+
+
+
+
+AIRBORNE PACKET 3 (SERIAL 1)--------------------------------------------------------------------------------------
+   17   1.701544 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 17: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb  8, 2025 00:33:45.871505000 UTC
+    UTC Arrival Time: Feb  8, 2025 00:33:45.871505000 UTC
+    Epoch Arrival Time: 1738974825.871505000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.001658000 seconds]
+    [Time delta from previous displayed frame: 0.001658000 seconds]
+    [Time since reference or first frame: 1.701544948 seconds]
+    Frame Number: 17
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 22806
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 22806
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x21
+        .... ...1 = CRC: Ok
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 14
+    RSSI: -63 dBm
+    Event counter: 0
+    Timestamp: 2290765123µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 490µs]
+    [Delta time (start to start): 1658µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x876d
+            .... 0111 0110 1101 = Advertiser Data Identifier: 0x76d
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0d02f219040212313836393630313138333300000000000000000000000052005465616d20313000000000000000000000000000000000122002010092592e15fb4cd0ce880ce10cd00729231a4f0a00420061592e15e24cd0ce0100000000000000e00ce9f87b0b00000
+    CRC: 0xf1413e
+Open Drone ID
+    Message Counter: 2 (0x02)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 4
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0001 .... = ID Type: Serial Number (ANSI/CTA-2063-A) (1)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: 18696011833
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 10
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = Operational Status: Airborne (2)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..0. = East/West Direction Segment: East (<180) (0)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 2
+            Speed: 1
+            Vert Speed: 0
+            UA Latitude: 355359122
+            UA Longitude: -825209605
+            UA Pressure Altitude: 3208
+            UA Geodetic Altitude: 3297
+            UA Height AGL: 2000
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 20250 (lag: 0.8s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+        Open Drone ID - System Message (4)
+            0100 .... = Message Type: System (4)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            .... 00.. = Classification Type: Undeclared (0)
+            .... ..00 = Operator Location Type: Take Off (0)
+            Operator Latitude: 355359073
+            Operator Longitude: -825209630
+            Area Count: 1
+            Area Radius: 0
+            Area Ceiling: 0
+            Area Floor: 0
+            UA Classification: 0x00
+            Operator Geodetic Alt: 3296
+            Message Timestamp: 192674025 (lag: 1546300800s)
+            Reserved: 00
+
+
+
+
+AIRBORNE PACKET 4 (FAA 2)--------------------------------------------------------------------------------------
+   17   1.701544 NanjingQinhe_8d:d7:2b → Broadcast    OPENDRONEID 196 AUX_ADV_IND
+Frame 17: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface /dev/ttyACM0-4.2, id 0
+    Section number: 1
+    Interface id: 0 (/dev/ttyACM0-4.2)
+        Interface name: /dev/ttyACM0-4.2
+        Interface description: nRF Sniffer for Bluetooth LE
+    Encapsulation type: nRF Sniffer for Bluetooth LE (186)
+    Arrival Time: Feb  8, 2025 00:33:45.871505000 UTC
+    UTC Arrival Time: Feb  8, 2025 00:33:45.871505000 UTC
+    Epoch Arrival Time: 1738974825.871505000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.001658000 seconds]
+    [Time delta from previous displayed frame: 0.001658000 seconds]
+    [Time since reference or first frame: 1.701544948 seconds]
+    Frame Number: 17
+    Frame Length: 196 bytes (1568 bits)
+    Capture Length: 196 bytes (1568 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: nordic_ble:btle:btcommon]
+nRF Sniffer for Bluetooth LE
+    Board: 0
+    Header Version: 3, Packet counter: 22806
+        Length of payload: 189
+        Protocol version: 3
+        Packet counter: 22806
+        Packet ID: 2
+    Length of packet: 10
+    Flags: 0x21
+        .... ...1 = CRC: Ok
+        .... .00. = Aux Type: AUX_ADV_IND (0)
+        .... 0... = Address Resolved: No
+        .010 .... = PHY: LE Coded (2)
+        0... .... = Reserved: 0
+    Channel Index: 14
+    RSSI: -63 dBm
+    Event counter: 0
+    Timestamp: 2290765123µs
+    [Packet time (start to end): 11536µs]
+    [Delta time (end to start): 490µs]
+    [Delta time (start to start): 1658µs]
+Bluetooth Low Energy Link Layer
+    Access Address: 0x8e89bed6
+    .... ..00 = Coding Indicator: FEC Block 2 coded using S=8 (0)
+    Packet Header: 0xa907 (PDU Type: AUX_ADV_IND, TxAdd: Public)
+        .... 0111 = PDU Type: 0x7 AUX_ADV_IND
+        ...0 .... = Reserved: 0
+        ..0. .... = Reserved: 0
+        .0.. .... = Tx Address: Public
+        0... .... = Reserved: 0
+        Length: 169
+    Extended Advertising Header
+        ..00 1001 = Extended Header Length: 9
+        00.. .... = Advertising Mode: Non-connectable Non-scannable (0x0)
+        Extended Header Flags: 0x09
+            .... ...1 = Advertiser Address: Present
+            .... ..0. = Target Address: Not Present
+            .... .0.. = CTE Info: Not Present
+            .... 1... = Advertiser Data Info: Present
+            ...0 .... = Aux pointer: Not Present
+            ..0. .... = Sync Info: Not Present
+            .0.. .... = TX Power: Not Present
+            0... .... = Reserved: Not Present
+        Advertising Address: NanjingQinhe_8d:d7:2b (e0:4e:7a:8d:d7:2b)
+        Advertiser Data Info: 0x876d
+            .... 0111 0110 1101 = Advertiser Data Identifier: 0x76d
+            1000 .... .... .... = Advertiser Set Identifier: 0x8
+    Advertising Data
+        Service Data - 16 bit UUID
+            Length: 158
+            Type: Service Data - 16 bit UUID (0x16)
+            UUID 16: ASTM Remote ID (0xfffa)
+            Service Data [truncated]: 0d02f219040212313836393630313138333300000000000000000000000052005465616d20313000000000000000000000000000000000122002010092592e15fb4cd0ce880ce10cd00729231a4f0a00420061592e15e24cd0ce0100000000000000e00ce9f87b0b00000
+    CRC: 0xf1413e
+Open Drone ID
+    Message Counter: 2 (0x02)
+    Open Drone ID - Message Pack (15)
+        1111 .... = Message Type: Message Pack (15)
+        .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+        MessagePack: Message Size: 25
+        MessagePack: Message Quantity: 4
+        Open Drone ID - Basic ID Message (0)
+            0000 .... = Message Type: Basic ID (0)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = ID Type: CAA Assigned Registration ID  (2)
+            .... 0010 = UA Type: Helicopter (or Multirotor) (2)
+            ID: FA22222
+            Reserved: 00 00 00
+        Open Drone ID - Operator ID Message (5)
+            0101 .... = Message Type: Operator ID (5)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            Operator ID Type: Operator ID (0)
+            Operator ID: Team 2
+            Reserved: 00 00 00
+        Open Drone ID - Location/Vector Message (1)
+            0001 .... = Message Type: Location/Vector (1)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            0010 .... = Operational Status: Airborne (2)
+            .... .0.. = Height Type: Above Takeoff (0)
+            .... ..0. = East/West Direction Segment: East (<180) (0)
+            .... ...0 = Speed Multiplier: 0.25 (0)
+            Direction: 2
+            Speed: 1
+            Vert Speed: 0
+            UA Latitude: 355359122
+            UA Longitude: -825209605
+            UA Pressure Altitude: 3208
+            UA Geodetic Altitude: 3297
+            UA Height AGL: 2000
+            .... 1001 = Horizontal Accuracy: <30 m (9)
+            0010 .... = Vertical Accuracy: <45 m (2)
+            0010 .... = Baro Accuracy: <45 m (2)
+            .... 0011 = Speed Accuracy: <1 m/s (3)
+            Timestamp (1/10s since the hour): 20250 (lag: 0.8s)
+            0000 .... = Reserved: Unknown (0)
+            .... 1010 = Timestamp Accuracy (1/10s): 10
+            Reserved: 00
+        Open Drone ID - System Message (4)
+            0100 .... = Message Type: System (4)
+            .... 0010 = Protocol Version: F3411-22 (2.0) (2)
+            .... 00.. = Classification Type: Undeclared (0)
+            .... ..00 = Operator Location Type: Take Off (0)
+            Operator Latitude: 355359073
+            Operator Longitude: -825209630
+            Area Count: 1
+            Area Radius: 0
+            Area Ceiling: 0
+            Area Floor: 0
+            UA Classification: 0x00
+            Operator Geodetic Alt: 3296
+            Message Timestamp: 192674025 (lag: 1546300800s)
+            Reserved: 00
+

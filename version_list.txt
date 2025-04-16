@@ -1,0 +1,29 @@
+1.0 
+- Initial packet reading
+- output as columns
+- imports: csv
+
+1.1
+- included whitelist
+- added loop_in_ua_packet
+
+1.2	(2/7/2025)
+- rotated output packets to allow for better ArcGIS integration
+- imports: numpy, import, csv
+
+1.3
+- allowed input arguements from shell scrip
+- imports: sys, numpy, import, csv
+
+1.4	(2/10/2025)
+- rotates a display array for better printing to terminal
+- saves rotated array as a csv
+- saves operator data when available
+
+1.4.1 	(2/12/2025) currently packet_processing_script.py
+- added crc check
+- if packet contains CRC: Error ignore packet contents until next packet start
+
+1.4.2 	(2/13/2025)
+- updated bash to pass in booleon for remove_old_drone
+- if true drone entries that are older than loop_position - loop_limit
