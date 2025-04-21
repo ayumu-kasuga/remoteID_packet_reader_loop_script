@@ -2,10 +2,11 @@
 -- Copyright 2021, Gabriel Cox
 -- License: apache-2.0
 
+--bit32 = bit32 or {}
 bit32 = require("bit32")
 
 debugMode = 0
-showTOALag = 1
+showTOALag = 0 -- ORIGINALLY 1, MODEIFIED TO SKIP ERRORS
 
 odid_protocol = Proto("OpenDroneID",  "Open Drone ID Protocol")
 odid_protocol_message_pack = Proto("OpenDroneID.message.pack",  "Open Drone ID (Message Pack)")
@@ -315,17 +316,19 @@ function dump(o)
    end
 end
 
+
+-- MODIDIFIED BY TEAM 10 TO IGNORE ERROR AND CONTINUE PACKET DECODING
 -- find lag time based on rx time and 10ths of seconds since the hour tx time
-function timeDelta10(rxTime,txHour10)
-    local rxTimeParts = os.date("*t",rxTime)
-    local rxFracTime = rxTime-math.floor(rxTime) -- fractional time
-    -- note: this is rounding the difference down to significant digits. 
-    -- Since the fractional tenth of second is unknown (could be 0.09)
-    -- rounding down is used to give the benefit of doubt.
-    rxHour10=(rxTimeParts["min"]*60+rxTimeParts["sec"])*10+math.floor(rxFracTime*10)
-    local diff10 = rxHour10-txHour10
-    return "Timestamp (1/10s since the hour): "..txHour10.." (lag: "..string.format("%.1f",diff10/10).."s)"
-end
+--function timeDelta10(rxTime,txHour10)
+--    --local rxTimeParts = os.date("*t",rxTime)   (((RETURNS ERROR THAT 'DATE' HAS NO INTEGER VALUE)))  
+--    local rxFracTime = rxTime-math.floor(rxTime) -- fractional time
+--    -- note: this is rounding the difference down to significant digits. 
+--    -- Since the fractional tenth of second is unknown (could be 0.09)
+--    -- rounding down is used to give the benefit of doubt.
+--    rxHour10=(rxTimeParts["min"]*60+rxTimeParts["sec"])*10+math.floor(rxFracTime*10)
+--    local diff10 = rxHour10-txHour10
+--    return "Timestamp (1/10s since the hour): "..txHour10.." (lag: "..string.format("%.1f",diff10/10).."s)"
+--end
 
 -- find lag time between UTC timestamp and rx time
 function timeDelta(pkTime, txTime)
