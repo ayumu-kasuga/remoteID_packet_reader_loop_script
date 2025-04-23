@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Drone Detection
+Type=Application
+Comment=starts shell_main.sh or shell_main_w_ch_swtch.sh to run drone detection
+Exec=xfce4-terminal --command "zsh /home/kali/Desktop/packet_reader_script/shell_main_w_ch_swtch.sh"
+Icon=utilities-terminal
+Terminal=false
+Categories=utility;

@@ -1,9 +1,7 @@
 #!/usr/bin/zsh
 
-#TO DO TO COMPLETE
-#inital/ setup code to be used once
-#auto run on start_up
-#allow non-superuser packet capture
+# WARNING THIS IS THE EXPERIMENTAL RELEASE
+cd /home/kali/Desktop/packet_reader_script/ # ensures that files are saved to the correct directory
 
 
 #parameters / settings

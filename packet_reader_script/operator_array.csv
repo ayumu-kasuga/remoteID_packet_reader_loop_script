@@ -1,2 +1,3 @@
----OPERATOR DATA---,serial number,FAA Assigned Number,Operator ID,Affiliation,Latitude,Longitude,Geodetic Altitude,Height AO,drone name
-,1581FBKD225200B56L0,,Not Sent,Haywood County Emergency Management,35.4438167,-83.007565,0,,Matric 30T
+---OPERATOR DATA---,serial number,FAA Assigned Number,Operator ID,Affiliation,Latitude,Longitude,Geodetic Altitude,Height AO
+,null,null,null,null,0,0,0,0
+,1581F163DF9U00132VK0,,Not Sent,Team 10 Capstone,35.3074579,-83.1828841,3329,

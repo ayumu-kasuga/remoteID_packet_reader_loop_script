@@ -228,7 +228,7 @@ for line in pcap_file:
         elif "UA Geodetic Altitude:" in line:
             geo_alt = int(line.split("Geodetic Altitude: ")[1].rstrip('\n'))
         elif "UA Height AGL:" in line:
-            height_agl = int(line.split("Height AGL: ")[1].rstrip('\n'))
+            height_agl = int(line.split("Height AGL: ")[1].rstrip('\n')) - int(2000)
         
         # Operator Data
         elif contains_airborne == 1:

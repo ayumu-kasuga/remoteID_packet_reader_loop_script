@@ -1,4 +1,3 @@
 ---DRONE DATA---,serial number,FAA Assigned Number,UA type,Operator ID,Affiliation,Operational Status,Speed Multiplier,Direction,Speed,Vert Speed,Latitude,Longitude,Pressure Altitude,Geodetic Altitude,Height AGL,Drone Name,Loop
-,1581F163DF9U00132VK0,,Helicopter (or Multirotor) (2),Not Sent,Team 10 Capstone,On Ground (1),0.25 (0),181,0,0,35.4438488,-83.0058165,0,874,0,Mavic 2 Pro,31
-,1581FBKD225200B56L0,,Helicopter (or Multirotor) (2),Not Sent,Haywood County EM,Airborn (2),0.25 (0),94,12,0,35.4421005,-83.007,0,884,0,Matric 30T,50
-
+,null,,null,null,null,null,null,0,0,0,0,0,0,0,0,null,0
+,1581F163DF9U00132VK0,,Helicopter (or Multirotor) (2),Not Sent,Team 10 Capstone,On Ground (1),0.25 (0),181,0,0,35.3076628,-83.183094,0,3317,0,Mavic 2 Pro,133

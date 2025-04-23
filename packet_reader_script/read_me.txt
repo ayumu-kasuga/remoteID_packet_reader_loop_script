@@ -1,0 +1,1 @@
+move drone_detection.desktop to the desktop to be used as a shortcut, make sure the path in the .desktop file matches the path of shell_main_w_ch_swtch.sh

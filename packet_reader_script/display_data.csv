@@ -1,27 +1,27 @@
----DRONE DATA---
-serial number
-FAA Assigned Number
-UA type
-Operator ID
-Affiliation
-Operational Status
-Speed Multiplier
-Direction
-Speed
-Vert Speed
-Latitude
-Longitude
-Pressure Altitude
-Geodetic Altitude
-Height AGL
-Drone Name
-Loop
----OPERATOR DATA---
-serial number
-FAA Assigned Number
-Operator ID
-Affiliation
-Latitude
-Longitude
-Geodetic Altitude
-Height AO
+---DRONE DATA---,,
+serial number,null,1581F163DF9U00132VK0
+FAA Assigned Number,,
+UA type,null,Helicopter (or Multirotor) (2)
+Operator ID,null,Not Sent
+Affiliation,null,Team 10 Capstone
+Operational Status,null,On Ground (1)
+Speed Multiplier,null,0.25 (0)
+Direction,0,181
+Speed,0,0
+Vert Speed,0,0
+Latitude,0,35.3076628
+Longitude,0,-83.183094
+Pressure Altitude,0,0
+Geodetic Altitude,0,3317
+Height AGL,0,0
+Drone Name,null,Mavic 2 Pro
+Loop,0,133
+---OPERATOR DATA---,,
+serial number,null,1581F163DF9U00132VK0
+FAA Assigned Number,null,
+Operator ID,null,Not Sent
+Affiliation,null,Team 10 Capstone
+Latitude,0,35.3074579
+Longitude,0,-83.1828841
+Geodetic Altitude,0,3329
+Height AO,0,
