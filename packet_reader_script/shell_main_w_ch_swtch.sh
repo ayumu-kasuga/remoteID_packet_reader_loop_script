@@ -1,6 +1,6 @@
 #!/usr/bin/zsh
 
-cd /home/kali/Desktop/packet_reader_script/ # ensures that files are saved to the correct directory
+
 
 #parameters / settings
 # INTEGERS
@@ -22,9 +22,10 @@ qgis_out="drone_location_gui.qgz"
 white_list_file="white_list.csv"
 capture_file_name="remoteID_capture.pcapng"
 packet_contents_txt="packet_contents.txt"
-capture_dest_dir_temp="/home/kali/Desktop/packet_reader_script/"
+capture_dest_dir_temp="/home/kali/remoteID_reader_loop_script/packet_reader_script/"
 channel_list=(1 2 3 4 5 6 7 8 9 10 11 12)		# WLAN channels to be scanned. Default channel is the first entry
 
+cd $capture_dest_dir_temp # ensures that files are saved to the correct directory
 
 # INTERFACES
 ble_interface="/dev/ttyACM0-4.4"	#BLE interface should be:    /dev/ttyACM0-4.4 confirm by running wireshark and ensuring that the interface names match
@@ -35,6 +36,7 @@ single_interface_capture=false	# Should the sniffer be allowed to capture only o
 empty_csv_before_use=true
 #scan_channel_list=true # false uses default channel, true scans through a new channel with each loop
 
+# asks user if they want to use QGIS as a local map viewer, uses terminal only if they respond with Nn
 while true; do
 	echo "Do you want to view locations via QGIS? (y/n)"
 	read start_qgis
@@ -45,6 +47,7 @@ while true; do
 	esac
 done
 
+# update current_location.csv ot be used by GIS GUI
 while true; do
 	echo "Do you want to update your current location? (y/n)"
 	read new_loc_ans
@@ -55,10 +58,6 @@ while true; do
 	esac
 done
 
-clear
-
-
-
 if $use_new_loc; then
 	echo "Enter your current latitude in decimal degree form (xx.xxxxx)"
 	read new_lat
@@ -68,7 +67,9 @@ if $use_new_loc; then
 	echo "---CURRENT LOCATION---,Latitude,Longitude" >> $current_location
 	echo ",$new_lat,$new_long" >> $current_location
 fi
+clear
 
+# use single default channel or scan through channel_list
 while true; do
 	echo "Do you want to scan all availible channels outside of the default channel ($channel_list[$active_channel])? (y/n)"
 	read scan_ch_ans
@@ -78,6 +79,14 @@ while true; do
 		*) echo "invalid response, answer y or n";;
 	esac
 done
+
+# modify capture duration for capture portion of script, longer durations are more likely to capture distant drones, but have a slower update time
+echo "Enter the capture duration, or enter 'D' to use default value of " $capture_duration
+read cap_dur_ans
+case "$cap_dur_ans" in
+	[Dd]*) capture_duration=$capture_duration;;
+	*) capture_duration=$cap_dur_ans;;
+esac
 
 clear
 
