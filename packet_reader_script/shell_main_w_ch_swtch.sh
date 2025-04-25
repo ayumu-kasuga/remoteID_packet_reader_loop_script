@@ -8,7 +8,7 @@ loop_position=0
 loop_limit=10
 capture_duration=2
 remove_old_drone=0		#boolean
-active_channel=6		#current channel being scanned in channel list
+active_channel=6		#current index in channel list this is the default channel
 
 # FILES NAMES & PATHS
 capture_decoder_py="packet_processing_script.py"
@@ -125,12 +125,7 @@ fi
 
 if $mon_mode_ready; then
 	# dual capture while loop captures and processed both BLE and 802.11 packets
-	while true; do
-		echo "active channel: "
-		echo $active_channel
-		echo "\nchannel list length: "
-		echo ${#channel_list[@]}
-				
+	while true; do	
 		((loop_position++))
 		# iterated through channel array when scanning is selected
 		if $scan_channel_list; then
